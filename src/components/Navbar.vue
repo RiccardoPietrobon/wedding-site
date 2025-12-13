@@ -1,0 +1,129 @@
+<template> 
+  <nav class="bg-dark text-light container-fluid d-flex justify-content-between align-items-center shadows-into-light-two-regular">
+      <!-- Pulsante "Torna su" -->
+      <a class="navbar-brand" href="#" :class="scrollY > 1 ? 'fade-in' : 'fade-out'">Torna su</a>
+      <a @click="openMenu">Apri menu</a>
+
+      <!-- offcanvas controllata da v-if -->
+      <div v-if="isOpen" id="myOffcanvas" class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1">
+        <div class="offcanvas-header">
+          <h5>Menu</h5>
+          <button class="btn-close text-light" @click="closeMenu"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <a @click="navigate('/',            '#Home')"       class="nav-link">Home</a>
+          <a @click="navigate('/Chiesa',      '#Chiesa')"     class="nav-link">Chiesa</a>
+          <a @click="navigate('/Ristorante',  '#Ristorante')" class="nav-link">Ristorante</a>
+          <a @click="navigate('/Viaggio',     '#Viaggio')"    class="nav-link">Viaggio di Nozze</a>
+          <a @click="navigate('/ListaNozze',  '#ListaNozze')" class="nav-link">Lista di Nozze</a>
+          <a @click="navigate('/Media',       '#Media')"      class="nav-link">Foto & Video</a>
+        </div>
+      </div>
+  </nav>
+</template>
+
+
+<script setup>
+import { ref, nextTick, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
+import { Offcanvas } from 'bootstrap'
+
+const router = useRouter()
+
+const isOpen = ref(false)
+let offcanvasInstance = null
+
+async function openMenu() {
+  isOpen.value = true
+  await nextTick()
+  offcanvasInstance = new Offcanvas(document.getElementById('myOffcanvas'))
+  offcanvasInstance.show()
+}
+
+function closeMenu() {
+  if (offcanvasInstance) offcanvasInstance.hide()
+  isOpen.value = false
+}
+
+async function navigate(path, hash = null) {
+  await router.push({ path, hash }) // usa oggetto per hash
+  closeMenu()
+}
+
+/* --- GESTIONE TASTO "TORNA SU" --- */
+const scrollY = ref(0)
+
+onMounted(() => {
+  window.addEventListener("scroll", () => {
+    scrollY.value = window.scrollY
+  })
+})
+
+</script>
+
+
+<style scoped>
+
+/* Altezza quando chiusa */
+nav {
+    min-height: 10vh;
+}
+a {
+  opacity: 0.6
+}
+a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#myOffcanvas {
+  width: 350px; /* esempio: 400px */
+  max-width: 75%; /* non oltre il 90% dello schermo */
+}
+
+.navbar-brand {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-brand.fade-in {
+  animation: fadeIn .8s ease forwards;
+}
+
+.navbar-brand.fade-out {
+  animation: fadeOut .8s ease forwards;
+}
+
+/* --- ANIMAZIONI PERSONALIZZABILI --- */
+
+@keyframes fadeIn {
+  0%  { opacity: 0; }
+  10% { opacity: 0.1; }
+  20% { opacity: 0.2; }
+  30% { opacity: 0.3; }
+  40% { opacity: 0.4; }
+  50% { opacity: 0.5; }
+  60% { opacity: 0.6; }
+  70% { opacity: 0.7; }
+  80% { opacity: 0.8; }
+  90% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0%  { opacity: 1; }
+  10% { opacity: 0.9; }
+  20% { opacity: 0.8; }
+  30% { opacity: 0.7; }
+  40% { opacity: 0.6; }
+  50% { opacity: 0.5; }
+  60% { opacity: 0.4; }
+  70% { opacity: 0.3; }
+  80% { opacity: 0.2; }
+  90% { opacity: 0.1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+</style>
+
