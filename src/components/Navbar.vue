@@ -1,11 +1,11 @@
 <template> 
-  <nav class="bg-dark text-light container-fluid d-flex justify-content-between align-items-center shadows-into-light-two-regular">
+  <nav class="bg-barra text-light container-fluid d-flex justify-content-between align-items-center playpen-sans">
       <!-- Pulsante "Torna su" -->
       <a class="navbar-brand" href="#" :class="scrollY > 1 ? 'fade-in' : 'fade-out'">Torna su</a>
       <a @click="openMenu">Apri menu</a>
 
       <!-- offcanvas controllata da v-if -->
-      <div v-if="isOpen" id="myOffcanvas" class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1">
+      <div v-if="isOpen" id="myOffcanvas" class="offcanvas offcanvas-end bg-tendina text-light" tabindex="-1">
         <div class="offcanvas-header">
           <h5>Menu</h5>
           <button class="btn-close text-light" @click="closeMenu"></button>
@@ -123,6 +123,14 @@ a:hover {
   80% { opacity: 0.2; }
   90% { opacity: 0.1; }
   100% { opacity: 0; visibility: hidden; }
+}
+
+.bg-barra{
+  background-color: #b6885d;
+}
+
+.bg-tendina{
+  background-color: #6e90c0;
 }
 
 </style>
