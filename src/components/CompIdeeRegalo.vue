@@ -2,7 +2,7 @@
   <div class="component" id="IdeeRegalo">
     <div class="row justify-content-around">
       <div class="col-6 col-md-5 col-lg-3">
-        <h2 class="ms-madi-regular">Idee Regalo</h2>
+        <h1 class="ms-madi-regular">Idee Regalo</h1>
       </div>
     </div>
     <div class="row justify-content-around">
