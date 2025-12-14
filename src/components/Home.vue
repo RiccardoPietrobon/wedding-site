@@ -2,23 +2,25 @@
   <div class="component" id="Home">
     <div class="row justify-content-around">
       <div class="col-12">
-        <h2 class="ms-madi-regular">Benvenuti nel sito del <br>Nostro Matrimonio!</h2>
+        <h1 class="ms-madi-regular">Benvenuti nel sito del <br>Nostro Matrimonio!</h1>
       </div>
     </div>
-    <div class="row justify-content-around">
-      <div class="col-7">
+    <div class="row justify-content-around p-2">
+      <div class="col-10 col-md-8 col-lg-6">
         <img src="/img/home_noi.png" alt="catericky">
       </div>
     </div>
     <div class="row justify-content-around ">
       <div class="col-10">
-        <p class="pt-3 shadows-into-light-two-regular">
-          Abbiamo racchiuso idee e informazioni che vi e ci possano accompagnare prima, durante e dopo il nostro Giorno Speciale.
+        <p class="pt-3 playpen-sans">
+          In questo sito abbiamo racchiuso idee e informazioni che vi e ci possano accompagnare prima, durante e dopo il nostro Giorno Speciale.<br>
           Alcune pagine sono già ultimate, altre si aggiorneranno nei prossimi mesi, continuate a dare un'occhiata. 
           <br><br>
-          Buona navigazione!<br>
+          Buona navigazione!
+          <br><br>
           Con affetto,<br> 
-          Caterina e Riccardo 
+          Caterina e Riccardo<br> 
+          3286611915 - 3492966792
         </p>
       </div>
     </div>

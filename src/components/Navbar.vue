@@ -13,11 +13,10 @@
 
         <div class="offcanvas-body">
           <a @click="navigate('/',            '#Home')"       class="nav-link">Home</a>
-          <a @click="navigate('/Chiesa',      '#Chiesa')"     class="nav-link">Chiesa</a>
-          <a @click="navigate('/Ristorante',  '#Ristorante')" class="nav-link">Ristorante</a>
-          <a @click="navigate('/Viaggio',     '#Viaggio')"    class="nav-link">Viaggio di Nozze</a>
-          <a @click="navigate('/ListaNozze',  '#ListaNozze')" class="nav-link">Lista di Nozze</a>
-          <a @click="navigate('/Media',       '#Media')"      class="nav-link">Foto & Video</a>
+          <a @click="navigate('/Cerimonia',      '#Cerimonia')"     class="nav-link">Cerimonia</a>
+          <a @click="navigate('/Ricevimento',  '#Ricevimento')" class="nav-link">Ricevimento</a>
+          <a @click="navigate('/IdeeRegalo',  '#IdeeRegalo')" class="nav-link">Idee Regalo</a>
+          <a @click="navigate('/Ricordi',     '#Ricordi')"    class="nav-link">Ricordi</a>
         </div>
       </div>
   </nav>

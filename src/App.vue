@@ -42,9 +42,10 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  color: #503732;
 }
 
-  .bg-router{
-    background-color: #e6cbb3;
-  }
+.bg-router{
+  background-color: #e6cbb3;
+}
 </style>

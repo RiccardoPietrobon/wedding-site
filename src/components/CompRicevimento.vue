@@ -1,17 +1,31 @@
 <template>
-  <div class="component" id="Media">
-    <div class="row justify-content-center">
-      <h2 class="ms-madi-regular">Foto e Video</h2>
-      <div class="col-2">
-        <img src="/img/foto_video_uno.png" alt="Media">
-      </div>
-      <div class="col-2">
-        <img src="/img/foto_video_due.png" alt="Media">
+  <div class="component" id="Ricevimento">
+    <div class="row justify-content-around">
+      <div class="col-8 col-md-6 col-lg-5">
+        <h1 class="ms-madi-regular">Ricevimento</h1>
+        <img src="/img/location.png" alt="Location">
       </div>
     </div>
     <div class="row justify-content-around ">
-      <div class="col-8">
-        <p class="pt-3 shadows-into-light-two-regular">Contenuto della pagina 1 gcghchgc cfchhchg Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam quod cupiditate odit unde perspiciatis dignissimos consequatur autem aperiam deserunt maxime iste minima, corporis placeat consectetur cum accusamus, quae exercitationem?</p>
+      <div class="col-10">
+        <p class="p-3 playpen-sans">
+          La giornata proseguirà presso il ristorante 'Alla Darsena' per condividere e festeggiare insieme il nostro Giorno Speciale.
+          <br>
+          Indirizzo: Ristorante Alla Darsena - Viale Oriente 166, 30016 Cortellazzo di Jesolo (VE)</p>
+      </div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col-10 col-md-8 col-lg-6">
+        <iframe :src="mapSrc" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="row justify-content-around ">
+      <div class="col-10">
+        <p class="p-4 playpen-sans">
+          Il menù sarà a base di pesce. E' adattabile ad ogni esigenza particolare, non esitate a contattarci. 
+          <br>
+          E' gradita gentile conferma della vostra presenza entro il 15 aprile 2026
+        </p>
       </div>
     </div>
   </div>
@@ -44,6 +58,30 @@ img {
 .map-title {
   font-size: 1.6rem;
   margin-bottom: 1rem;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  /*min-width: 80vh;*/
+}
+
+/* Bottone indicazioni */
+.directions-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 20px;
+  background: #2b7cff;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.directions-btn:hover {
+  background: #1a5cd1;
 }
 </style>
 

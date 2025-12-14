@@ -1,18 +1,20 @@
 <template>
-  <div class="component" id="ListaNozze">
+  <div class="component" id="Ricordi">
+    <div class="row justify-content-around">
+      <div class="col-8 col-md-6 col-lg-5">
+        <h1 class="ms-madi-regular">Ricordi</h1>
+        <img src="/img/foto_video_mix.png" alt="Location">
+      </div>
+    </div>
     <div class="row justify-content-around">
       <div class="col-8">
-        <h2 class="ms-madi-regular">Lista di nozze</h2>
-      </div>
-    </div>
-    <div class="row justify-content-around">
-      <div class="col-4">
-        <img src="/img/lista_nozze.png" alt="Lista Nozze">
-      </div>
-    </div>
-    <div class="row justify-content-around ">
-      <div class="col-10">
-        <p class="pt-3 shadows-into-light-two-regular">Contenuto della pagina 1 gcghchgc cfchhchg Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam quod cupiditate odit unde perspiciatis dignissimos consequatur autem aperiam deserunt maxime iste minima, corporis placeat consectetur cum accusamus, quae exercitationem?</p>
+        <p class="pt-3 playpen-sans">
+          Il giorno del Matrimonio sarà ricco di emozioni e di momenti irripetibili!
+          <br>
+          Ci piacerebbe poterlo rivivere anche attraverso lo sguardo di chi sarà lì con noi, per non perderci neanche un attimo della gioia condivisa.
+          <br>
+          Qui troverete un link per caricare, durante quel giorno e nei giorni successivi, video e foto fatti da voi
+        </p>
       </div>
     </div>
   </div>
@@ -45,23 +47,6 @@ img {
 .map-title {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
-  /*min-width: 80vh;*/
-}
-
-.appear {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 2.6s ease, transform 0.6s ease;
-}
-
-.appear.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 </style>
 

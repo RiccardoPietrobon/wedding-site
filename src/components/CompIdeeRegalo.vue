@@ -1,19 +1,48 @@
 <template>
-  <div class="component" id="Ristorante">
+  <div class="component" id="IdeeRegalo">
     <div class="row justify-content-around">
-      <div class="col-6">
-        <h2 class="ms-madi-regular">Alla Darsena</h2>
-        <img src="/img/location.png" alt="Location">
+      <div class="col-6 col-md-5 col-lg-3">
+        <h2 class="ms-madi-regular">Idee Regalo</h2>
       </div>
     </div>
-    <div class="row justify-content-around ">
-      <div class="col-10">
-        <p class="pt-3 shadows-into-light-two-regular">Contenuto della pagina 1 gcghchgc cfchhchg Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam quod cupiditate odit unde perspiciatis dignissimos consequatur autem aperiam deserunt maxime iste minima, corporis placeat consectetur cum accusamus, quae exercitationem?</p>
+    <div class="row justify-content-around">
+      <div class="col-8">
+        <p class="pt-3 playpen-sans">
+          La vostra partecipazione è il regalo più importante.
+          <br>
+          Se però desideraste farci un pensiero, qui inseriremo nei prossimi mesi alcuni spunti a noi graditi:</p>
       </div>
     </div>
-    <div class="row justify-content-around ">
-      <div class="col-10">
-        <iframe :src="mapSrc" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <!-- RIGA 1 -->
+    <div class="row align-items-center m-3 justify-content-around">
+      <!-- IMG 1 -->
+      <div class="col-6 col-md-5 col-lg-5 col-xl-4 col-xxl-3 order-1 order-md-1">
+        <img src="/img/lista_nozze.png" alt="Location">
+      </div>
+
+      <!-- TESTO 1 -->
+      <div class="col-8 col-md-6 order-2 order-md-2">
+        <p class="playpen-sans">
+          alcune liste nozze, per arricchire la nostra casa anche grazie a voi e al ricordo di quel giorno
+        </p>
+      </div>
+    </div>
+
+    <!-- RIGA 2 -->
+    <div class="row align-items-center m-3 justify-content-around">
+      <!-- TESTO 2 -->
+      <div class="col-8 col-md-6 order-4 order-md-3">       
+        <p class="playpen-sans">
+          la possibilità di contribuire alla luna di miele, 
+          <br>
+          per aiutarci a rendere indimenticabile il nostro primo viaggio da marito e moglie
+        </p>
+      </div>
+
+      <!-- IMG 2 -->
+      <div class="col-6 col-md-5 col-lg-5 col-xl-4 col-xxl-3 order-3 order-md-4">
+        <img src="/img/viaggio_di_nozze.png" alt="Location">
       </div>
     </div>
   </div>
@@ -46,30 +75,6 @@ img {
 .map-title {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 16/9;
-  /*min-width: 80vh;*/
-}
-
-/* Bottone indicazioni */
-.directions-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 12px 20px;
-  background: #2b7cff;
-  color: white;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
-
-.directions-btn:hover {
-  background: #1a5cd1;
 }
 </style>
 

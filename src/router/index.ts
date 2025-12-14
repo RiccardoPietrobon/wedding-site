@@ -1,20 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home             from '../components/Home.vue'
-import CompChiesa       from '../components/CompChiesa.vue'
-import CompRistorante   from '../components/CompRistorante.vue'
-import CompViaggio      from '../components/CompViaggio.vue'
-import CompListaNozze   from '../components/CompListaNozze.vue'
-import CompMedia        from '../components/CompMedia.vue'
+import CompCerimonia       from '../components/CompCerimonia.vue'
+import CompRicevimento   from '../components/CompRicevimento.vue'
+import CompIdeeRegalo      from '../components/CompIdeeRegalo.vue'
+import CompRicordi        from '../components/CompRicordi.vue'
 //import Sfondo from '@/components/Sfondo.vue'
 
 const routes = [
   { path: '/',    component: Home },
   //{ path: '/', component: Sfondo },
-  { path: '/Chiesa', component: CompChiesa },
-  { path: '/Ristorante', component: CompRistorante },
-  { path: '/Viaggio', component: CompViaggio },
-  { path: '/ListaNozze', component: CompListaNozze },
-  { path: '/Media', component: CompMedia }
+  { path: '/Cerimonia', component: CompCerimonia },
+  { path: '/Ricevimento', component: CompRicevimento },
+  { path: '/IdeeRegalo', component: CompIdeeRegalo },
+  { path: '/Ricordi', component: CompRicordi }
 ]
 
 const router = createRouter({
