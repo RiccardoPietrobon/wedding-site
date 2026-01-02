@@ -1,22 +1,22 @@
 <template> 
   <nav class="bg-barra text-light container-fluid d-flex justify-content-between align-items-center playpen-sans">
       <!-- Pulsante "Torna su" -->
-      <a class="navbar-brand" href="#" :class="scrollY > 1 ? 'fade-in' : 'fade-out'">Torna su</a>
-      <a @click="openMenu">Apri menu</a>
+      <a class="navbar-brand ms-3" href="#" :class="scrollY > 1 ? 'fade-in' : 'fade-out'">Torna su</a>
+      <a @click="openMenu" class="navbar-brand me-3" >Apri menu</a>
 
       <!-- offcanvas controllata da v-if -->
       <div v-if="isOpen" id="myOffcanvas" class="offcanvas offcanvas-end bg-tendina text-light" tabindex="-1">
         <div class="offcanvas-header">
-          <h5>Menu</h5>
+          <h5 class="mt-2 ms-2">Menu</h5>
           <button class="btn-close text-light" @click="closeMenu"></button>
         </div>
 
         <div class="offcanvas-body">
-          <a @click="navigate('/',            '#Home')"       class="nav-link">Home</a>
-          <a @click="navigate('/Cerimonia',      '#Cerimonia')"     class="nav-link">Cerimonia</a>
-          <a @click="navigate('/Ricevimento',  '#Ricevimento')" class="nav-link">Ricevimento</a>
-          <a @click="navigate('/IdeeRegalo',  '#IdeeRegalo')" class="nav-link">Idee Regalo</a>
-          <a @click="navigate('/Ricordi',     '#Ricordi')"    class="nav-link">Ricordi</a>
+          <a @click="navigate('/',              '#Home')"         class="nav-link mb-5 mt-5 ms-2">Home</a>
+          <a @click="navigate('/Cerimonia',     '#Cerimonia')"    class="nav-link mb-5 mt-5 ms-2">Cerimonia</a>
+          <a @click="navigate('/Ricevimento',   '#Ricevimento')"  class="nav-link mb-5 mt-5 ms-2">Ricevimento</a>
+          <a @click="navigate('/IdeeRegalo',    '#IdeeRegalo')"   class="nav-link mb-5 mt-5 ms-2">Idee Regalo</a>
+          <a @click="navigate('/Ricordi',       '#Ricordi')"      class="nav-link mb-5 mt-5 ms-2">Ricordi</a>
         </div>
       </div>
   </nav>
@@ -79,6 +79,7 @@ a:hover {
 #myOffcanvas {
   width: 350px; /* esempio: 400px */
   max-width: 75%; /* non oltre il 90% dello schermo */
+  border: none;
 }
 
 .navbar-brand {
@@ -130,6 +131,7 @@ a:hover {
 
 .bg-tendina{
   background-color: #6e90c0;
+  border: none;
 }
 
 </style>
