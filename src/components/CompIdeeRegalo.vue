@@ -10,7 +10,7 @@
         <p class="pt-3 playpen-sans">
           La vostra partecipazione è il regalo più importante.
           <br>
-          Se però desideraste farci un pensiero, qui inseriremo nei prossimi mesi alcuni spunti a noi graditi:</p>
+          Se però desideraste farci un pensiero, ecco alcuni spunti a noi graditi:</p>
       </div>
     </div>
 
@@ -24,7 +24,7 @@
       <!-- TESTO 1 -->
       <div class="col-8 col-md-6 order-2 order-md-2">
         <p class="playpen-sans">
-          alcune liste nozze, per arricchire la nostra casa anche grazie a voi e al ricordo di quel giorno
+          a breve inseriremo i riferimenti ad alcune liste nozze, per arricchire la nostra casa anche grazie a voi e al ricordo di quel giorno
         </p>
       </div>
     </div>
@@ -34,7 +34,9 @@
       <!-- TESTO 2 -->
       <div class="col-8 col-md-6 order-4 order-md-3">       
         <p class="playpen-sans">
-          la possibilità di contribuire alla luna di miele, 
+          a questo <a href="https://www.paypal.com/pool/9mJXDnTcSq?sr=wccr">link</a>... potete contribuire alla luna di miele, 
+          
+
           <br>
           per aiutarci a rendere indimenticabile il nostro primo viaggio da marito e moglie
         </p>
