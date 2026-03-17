@@ -24,7 +24,10 @@
       <!-- TESTO 1 -->
       <div class="col-8 col-md-6 order-2 order-md-2">
         <p class="playpen-sans">
-          a breve inseriremo i riferimenti ad alcune liste nozze, per arricchire la nostra casa anche grazie a voi e al ricordo di quel giorno
+          Qui di seguito troverete i riferimenti della lista nozze, per arricchire la nostra casa anche grazie a voi e al ricordo di quel giorno.
+          <br>
+          Potete contattare telefonicamente il punto vendita della SME di Susegana, dando i nostri nominativi, per ricevere maggiori informazioni. 
+          <a href="https://www.sme.it/punti-vendita/sme-susegana">Clicca qui</a>
         </p>
       </div>
     </div>
@@ -34,7 +37,7 @@
       <!-- TESTO 2 -->
       <div class="col-8 col-md-6 order-4 order-md-3">       
         <p class="playpen-sans">
-          a questo <a href="https://www.paypal.com/pool/9mJXDnTcSq?sr=wccr">link</a>... potete contribuire alla luna di miele, 
+          Accedendo a questo <a href="https://www.paypal.com/pool/9mJXDnTcSq?sr=wccr">link</a>, potete contribuire alla luna di miele, 
           
 
           <br>
