@@ -13,7 +13,10 @@
           <br>
           Ci piacerebbe poterlo rivivere anche attraverso lo sguardo di chi sarà lì con noi, per non perderci neanche un attimo della gioia condivisa.
           <br>
-          Qui troverete un link per caricare, durante quel giorno e nei giorni successivi, video e foto fatti da voi
+          Di seguito troverete il link per caricare, durante quel giorno e nei giorni successivi, video e foto fatti da voi
+        </p>
+        <p class="pt-3 playpen-sans">
+          <a href="https://drive.google.com/drive/folders/1QiGryNI6fIWawX0oxc6GGYz17QnkB94t?usp=sharing">Clicca qui</a>
         </p>
       </div>
     </div>
